@@ -32,7 +32,7 @@ class main(QMainWindow):
         self.qtTasarim.label.mouseReleaseEvent = self.mouse_release_event
         
         self.netG = Generator().to(self.device)
-        self.netG.load_state_dict(torch.load("weights/pix2pixGenState_Dict.pt"))
+        self.netG.load_state_dict(torch.load("weights/pix2pixGenState_Dictn160.pt"))
         
         self.start_x = None
         self.start_y = None
